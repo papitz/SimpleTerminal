@@ -8,11 +8,12 @@
 static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
-/*	"Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", */
-/*	"Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", */
+    "JoyPixels:pixelsize=14:antialias=true:autohint=true",
+    "Inconsolata for Powerline:pixelsize=12:antialias=true:autohint=true", 
+    "Hack Nerd Font Mono:pixelsize=11:antialias=true:autohint=true", 
 };
 
-static int borderpx = 2;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -79,8 +80,8 @@ static unsigned int cursorthickness = 2;
  *    Bold affects lines thickness if boxdraw_bold is not 0. Italic is ignored.
  * 0: disable (render all U25XX glyphs normally from the font).
  */
-const int boxdraw = 0;
-const int boxdraw_bold = 0;
+const int boxdraw = 1;
+const int boxdraw_bold = 1;
 
 /* braille (U28XX):  1: render as adjacent "pixels",  0: use font */
 const int boxdraw_braille = 0;
@@ -117,31 +118,23 @@ float alpha = 0.8, alphaUnfocused = 0.6;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
-
+    "#282c34", /* 0: black */
+    "#e06c75", /* 1: red */
+    "#98c379", /* 2: green */
+    "#d19a66", /* 3: yellow */
+    "#61afef", /* 4: blue */
+    "#c678dd", /* 5: magenta */
+    "#56b6c2", /* 6: cyan */
+    "#abb2bf", /* 7: white */
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
-
-	[255] = 0,
-
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#cccccc",
-	"#555555",
-	"black",
+    "#5c6370", /* 8: brblack */
+    "#e06c75", /* 9: brred */
+    "#98c379", /* 10: brgreen */
+    "#d19a66", /* 11: bryellow */
+    "#61afef", /* 12: brblue */
+    "#c678dd", /* 13: brmagenta */
+    "#56b6c2", /* 14: brcyan */
+    "#ffffff", /* 15: brwhite */
 };
 
 
@@ -151,9 +144,9 @@ static const char *colorname[] = {
  */
 unsigned int defaultfg = 7;
 unsigned int defaultbg = 0;
-static unsigned int defaultcs = 256;
-static unsigned int defaultrcs = 257;
-unsigned int bg = 17, bgUnfocused = 16;
+static unsigned int defaultcs = 7;
+static unsigned int defaultrcs = 0;
+unsigned int bg = 0, bgUnfocused = 0;
 
 /*
  * https://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h4-Functions-using-CSI-_-ordered-by-the-final-character-lparen-s-rparen:CSI-Ps-SP-q.1D81
@@ -168,7 +161,7 @@ unsigned int bg = 17, bgUnfocused = 16;
  * 7: Blinking st cursor
  * 8: Steady st cursor
  */
-static unsigned int cursorstyle = 1;
+static unsigned int cursorstyle = 2;
 static Rune stcursor = 0x2603; /* snowman (U+2603) */
 
 /*

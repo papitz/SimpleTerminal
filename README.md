@@ -12,7 +12,7 @@ In order to build st you need the Xlib header files.
 The font used is JetBrainsMono as a patched NerdFont.
 Install on Arch:
 
-    pacman -S nerd-fonts-jetbrains-mono
+    pacman -S nerd-fonts-jetbrains-mono ttf-joypixels
 
 ## Installation
 
@@ -37,7 +37,8 @@ Lets st be any geometry to work with gaps in tiling window managers.
 ### blinking cursor
 
 Gives the possibility of a blinking cursor.
-TODO: does not blink yet
+The cursor is set not to blink.
+Can be changed in the config.def.h at `cursorshape`.
 
 ### bold is not bright
 
@@ -66,7 +67,6 @@ Adds alpha values so st can be transparent. Focus adds different values dependin
 ### font2
 
 Adds a second font to support symbols that are not present in the first font.
-TODO: no second font set yet.
 
 ### ligatures
 

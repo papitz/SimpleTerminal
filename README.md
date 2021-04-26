@@ -4,6 +4,10 @@
 
 st is a simple terminal emulator for X which sucks less.
 
+## TODO
+{}properly add boxdraw
+___
+
 ## Requirements
 
 ---

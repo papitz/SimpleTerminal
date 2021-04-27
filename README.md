@@ -1,12 +1,12 @@
 # st - simple terminal
 
----
 
 st is a simple terminal emulator for X which sucks less.
 
-## Requirements
+## TODO
+- properly add boxdraw
 
----
+## Requirements
 
 In order to build st you need the Xlib header files.
 The font used is JetBrainsMono as a patched NerdFont.
@@ -16,7 +16,6 @@ Install on Arch:
 
 ## Installation
 
----
 
 Edit config.mk to match your local setup (st is installed into
 the /usr/local namespace by default).
@@ -28,7 +27,6 @@ necessary as root):
 
 ## Patches
 
----
 
 ### anygeometry
 
@@ -94,7 +92,6 @@ Adds a scrollback buffer.
 
 ## Running st
 
----
 
 If you did not install st with make clean install, you must compile
 the st terminfo entry with the following command:
@@ -105,6 +102,5 @@ See the man page for additional details.
 
 ## Credits
 
----
 
 Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.

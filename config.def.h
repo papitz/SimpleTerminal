@@ -117,22 +117,22 @@ float alpha = 0.8, alphaUnfocused = 0.75;
 static const char *colorname[] = {
 	/* 8 normal colors */
     "#111111", /* 0: black */
-    "#e06c75", /* 1: red */
-    "#98c379", /* 2: green */
-    "#d19a66", /* 3: yellow */
-    "#61afef", /* 4: blue */
-    "#c678dd", /* 5: magenta */
-    "#56b6c2", /* 6: cyan */
-    "#abb2bf", /* 7: white */
-	/* 8 bright colors */
-    "#5c6370", /* 8: brblack */
-    "#e06c75", /* 9: brred */
-    "#98c379", /* 10: brgreen */
-    "#d19a66", /* 11: bryellow */
-    "#61afef", /* 12: brblue */
-    "#c678dd", /* 13: brmagenta */
-    "#56b6c2", /* 14: brcyan */
-    "#ffffff", /* 15: brwhite */
+    "#f7768e", /* 1: red */
+    "#9ece6a", /* 2: green */
+    "#e0af68", /* 3: yellow */
+    "#7aa2f7", /* 4: blue */
+    "#bb9af7", /* 5: magenta */
+    "#7dcfff", /* 6: cyan */
+    "#a9b1d6", /* 7: white */
+    /* 8 bright colors */
+    "#414868", /* 8: brblack */
+    "#f7768e", /* 9: brred */
+    "#9ece6a", /* 10: brgreen */
+    "#e0af68", /* 11: bryellow */
+    "#7aa2f7", /* 12: brblue */
+    "#bb9af7", /* 13: brmagenta */
+    "#7dcfff", /* 14: brcyan */
+    "#c0caf5", /* 15: brwhite */
 };
 
 

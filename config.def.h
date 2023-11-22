@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font =
-    "JetBrainsMono Nerd Font:pixelsize=24:antialias=true:autohint=true";
+    "JetBrainsMono NFM:pixelsize=24:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "Symbola:pixelsize=24:antialias=true:autohint=true",

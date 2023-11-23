@@ -5,7 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "JetBrainsMono Nerd Font Mono:pixelsize=14:antialias=true:autohint=true";
+static char *font =
+    "JetBrainsMono Nerd Font:pixelsize=14:antialias=true:autohint=true";
 /* Spare fonts */
 static char *font2[] = {
     "Symbola:pixelsize=14:antialias=true:autohint=true",
@@ -135,7 +136,6 @@ static const char *colorname[] = {
     "#c0caf5", /* 15: brwhite */
 };
 
-
 /*
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
@@ -186,7 +186,7 @@ static unsigned int height = 364;
  * Default colour and shape of the mouse cursor
  */
 
-static char* mouseshape = "xterm";
+static char *mouseshape = "xterm";
 
 /*
  * Color used to display font attributes when fontconfig selected a font which
@@ -218,7 +218,7 @@ static MouseShortcut mshortcuts[] = {
 
 /* Internal keyboard shortcuts. */
 #define MODKEY Mod1Mask
-#define TERMMOD (ControlMask|ShiftMask)
+#define TERMMOD (ControlMask | ShiftMask)
 
 static Shortcut shortcuts[] = {
     /* mask                 keysym          function        argument */
@@ -264,13 +264,13 @@ static Shortcut shortcuts[] = {
  * If you want keys other than the X11 function keys (0xFD00 - 0xFFFF)
  * to be mapped below, add them to this array.
  */
-static KeySym mappedkeys[] = { -1 };
+static KeySym mappedkeys[] = {-1};
 
 /*
  * State bits to ignore when matching key or button events.  By default,
  * numlock (Mod2Mask) and keyboard layout (XK_SWITCH_MOD) are ignored.
  */
-static uint ignoremod = Mod2Mask|XK_SWITCH_MOD;
+static uint ignoremod = Mod2Mask | XK_SWITCH_MOD;
 
 /*
  * This is the huge key array which defines all compatibility to the Linux
